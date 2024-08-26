@@ -264,6 +264,49 @@ body.custom-background { background-image: url("/wp-content/uploads/2024/06/Post
 		<div class="nav-links"><div class="nav-previous"><a href="/2024/04/24/25-de-abril-e-os-25-de-ai-bril/" rel="prev">25 de Abril e Os 25 de AI-bril &rarr;</a></div><div class="nav-next"><a href="/2024/04/25/25-de-abril-e-a-ai-malia/" rel="next">&larr; 25 de Abril e a AI-M&aacute;lia</a></div></div>
 	</nav>
 <div id="disqus_thread"></div>
+<script>
+    var embedVars = {"disqusConfig":{"integration":"wordpress 3.1.1"},"disqusIdentifier":"144 \/?p=144","disqusShortname":"afirmador","disqusTitle":"25 de Abril e os Comun-AI","disqusUrl":"\/2024\/04\/25\/25-de-abril-e-os-comun-ai\/","postId":144};
+    var disqus_url = embedVars.disqusUrl;
+var disqus_identifier = embedVars.disqusIdentifier;
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = embedVars.disqusShortname;
+var disqus_title = embedVars.disqusTitle;
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+    /*
+    All currently supported events:
+    onReady: fires when everything is ready,
+    onNewComment: fires when a new comment is posted,
+    onIdentify: fires when user is authenticated
+    */
+    var dsqConfig = embedVars.disqusConfig;
+    this.page.integration = dsqConfig.integration;
+    this.page.remote_auth_s3 = dsqConfig.remote_auth_s3;
+    this.page.api_key = dsqConfig.api_key;
+    this.sso = dsqConfig.sso;
+    this.language = dsqConfig.language;
+
+    if (disqus_config_custom)
+        disqus_config_custom.call(this);
+};
+
+(function() {
+    // Adds the disqus_thread id to the comment section if site is using a WP block theme
+    var commentsBlock = document.querySelector('.wp-block-comments');
+    if (commentsBlock) {
+        commentsBlock.id = 'disqus_thread';
+    }
+    if (document.getElementById(disqus_container_id)) {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    } else {
+        console.error("Could not find 'disqus_thread' container to load DISQUS.  This is usually the result of a WordPress theme conflicting with the DISQUS plugin.  Try switching your site to a Classic Theme, or contact DISQUS support for help.");
+    }
+})();
+</script>
 
 <div class="clear"></div>
 </div><!--/#gridmini-posts-wrapper -->
@@ -331,12 +374,6 @@ var countVars = {"disqusShortname":"afirmador"};
 /* ]]> */
 </script>
 <script type="text/javascript" src="/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.1.1" id="disqus_count-js"></script>
-<script type="text/javascript" id="disqus_embed-js-extra">
-/* <![CDATA[ */
-var embedVars = {"disqusConfig":{"integration":"wordpress 3.1.1"},"disqusIdentifier":"144 \/?p=144","disqusShortname":"afirmador","disqusTitle":"25 de Abril e os Comun-AI","disqusUrl":"\/2024\/04\/25\/25-de-abril-e-os-comun-ai\/","postId":"144"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="/wp-content/plugins/disqus-comment-system/public/js/comment_embed.js?ver=3.1.1" id="disqus_embed-js"></script>
 <script type="text/javascript" src="/wp-content/themes/gridmini/assets/js/jquery.fitvids.min.js" id="fitvids-js"></script>
 <script type="text/javascript" src="/wp-content/themes/gridmini/assets/js/ResizeSensor.min.js" id="ResizeSensor-js"></script>
 <script type="text/javascript" src="/wp-content/themes/gridmini/assets/js/theia-sticky-sidebar.min.js" id="theia-sticky-sidebar-js"></script>
